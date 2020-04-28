@@ -1,0 +1,587 @@
+/* The class gridContainer should be applied so that no margins are around it */
+.gridContainer {
+  margin: 0px 8px 0px 8px;
+  display: grid;
+  grid-template-columns: [content] 1fr;
+}
+
+/* The class gridSidebar should be nested directly below the class gridContainer */
+.gridContainer .gridSidebar {
+  width: 224px;
+  margin-left: 12px;
+  margin-right: 48px;
+  display: none;
+}
+
+/* The class gridContent should be nested directly below the class gridContainer */
+.gridContainer .gridContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+  grid-auto-rows: minmax(min-content, max-content);
+  margin: 0px 12px;
+}
+
+/* The class rowContent should be nested directly below the class gridContainer */
+.rowContent > .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridContent .colSmallSpan1 {
+  grid-column: auto / span 1;
+}
+.rowContent .colSmallSpan1 {
+  flex-basis: calc(25% - 12px);
+  margin: 0px 6px;
+}
+
+.gridContent .colSmallSpan2 {
+  grid-column: auto / span 2;
+}
+.rowContent .colSmallSpan2 {
+  flex-basis: calc(50% - 12px);
+  margin: 0px 6px;
+}
+
+.gridContent .colSmallSpan3 {
+  grid-column: auto / span 3;
+}
+.rowContent .colSmallSpan3 {
+  flex-basis: calc(75% - 12px);
+  margin: 0px 6px;
+}
+
+.gridContent .colSmallSpan4 {
+  grid-column: auto / span 4;
+}
+.rowContent .colSmallSpan4 {
+  flex-basis: 100%;
+  margin: 0px 6px;
+}
+
+.gridContent .colSmallStart1 {
+  grid-column-start: 1;
+}
+
+.gridContent .colSmallStart2 {
+  grid-column-start: 2;
+}
+.rowContent .colSmallOffset1 {
+  margin-left: calc(25% + 6px);
+}
+
+.gridContent .colSmallStart3 {
+  grid-column-start: 3;
+}
+.rowContent .colSmallOffset2 {
+  margin-left: calc(50% + 6px);
+}
+
+.gridContent .colSmallStart4 {
+  grid-column-start: 4;
+}
+.rowContent .colSmallOffset3 {
+  margin-left: calc(75% + 6px);
+}
+
+@media (min-width: 376px) {
+  .gridContainer {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .gridContainer .gridContent {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 24px;
+  }
+
+  /* If small is defaulted to, we need to adjust for a bigger gap */
+  .gridContent .colSmallSpan1 {
+    grid-column: auto / span 1;
+  }
+  .rowContent .colSmallSpan1 {
+    flex-basis: calc(25% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colSmallSpan2 {
+    grid-column: auto / span 2;
+  }
+  .rowContent .colSmallSpan2 {
+    flex-basis: calc(50% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colSmallSpan3 {
+    grid-column: auto / span 3;
+  }
+  .rowContent .colSmallSpan3 {
+    flex-basis: calc(75% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colSmallSpan4 {
+    grid-column: auto / span 4;
+  }
+  .rowContent .colSmallSpan4 {
+    flex-basis: 100%;
+    margin: 0px 12px;
+  }
+
+  .rowContent .colSmallOffset1 {
+    margin-left: calc(25% + 12px);
+  }
+
+  .rowContent .colSmallOffset2 {
+    margin-left: calc(50% + 12px);
+  }
+
+  .rowContent .colSmallOffset3 {
+    margin-left: calc(75% + 12px);
+  }
+  /* ^ Small default handling end ^ */
+
+  .gridContent .colMediumSpan1 {
+    grid-column: auto / span 1;
+  }
+  .rowContent .colMediumSpan1 {
+    flex-basis: calc(12.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan2 {
+    grid-column: auto / span 2;
+  }
+  .rowContent .colMediumSpan2 {
+    flex-basis: calc(25% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan3 {
+    grid-column: auto / span 3;
+  }
+  .rowContent .colMediumSpan3 {
+    flex-basis: calc(37.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan4 {
+    grid-column: auto / span 4;
+  }
+  .rowContent .colMediumSpan4 {
+    flex-basis: calc(50% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan5 {
+    grid-column: auto / span 5;
+  }
+  .rowContent .colMediumSpan5 {
+    flex-basis: calc(62.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan6 {
+    grid-column: auto / span 6;
+  }
+  .rowContent .colMediumSpan6 {
+    flex-basis: calc(75% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan7 {
+    grid-column: auto / span 7;
+  }
+  .rowContent .colMediumSpan7 {
+    flex-basis: calc(87.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumSpan8 {
+    grid-column: auto / span 8;
+  }
+  .rowContent .colMediumSpan8 {
+    flex-basis: 100%;
+    margin: 0px 12px;
+  }
+
+  .gridContent .colMediumStart1 {
+    grid-column-start: 1;
+  }
+
+  .gridContent .colMediumStart2 {
+    grid-column-start: 2;
+  }
+  .rowContent .colMediumOffset1 {
+    margin-left: calc(12.5% + 12px);
+  }
+
+  .gridContent .colMediumStart3 {
+    grid-column-start: 3;
+  }
+  .rowContent .colMediumOffset2 {
+    margin-left: calc(25% + 12px);
+  }
+
+  .gridContent .colMediumStart4 {
+    grid-column-start: 4;
+  }
+  .rowContent .colMediumOffset3 {
+    margin-left: calc(37.5% + 12px);
+  }
+
+  .gridContent .colMediumStart5 {
+    grid-column-start: 5;
+  }
+  .rowContent .colMediumOffset4 {
+    margin-left: calc(50% + 12px);
+  }
+
+  .gridContent .colMediumStart6 {
+    grid-column-start: 6;
+  }
+  .rowContent .colMediumOffset5 {
+    margin-left: calc(62.5% + 12px);
+  }
+
+  .gridContent .colMediumStart7 {
+    grid-column-start: 7;
+  }
+  .rowContent .colMediumOffset6 {
+    margin-left: calc(75% + 12px);
+  }
+
+  .gridContent .colMediumStart8 {
+    grid-column-start: 8;
+  }
+  .rowContent .colMediumOffset7 {
+    margin-left: calc(87.5% + 12px);
+  }
+}
+
+@media (min-width: 769px) {
+  .gridContainer {
+    margin: 0px 52px 0px 52px;
+    grid-template-columns: [sidebar] auto [content] 1fr;
+  }
+
+  .gridContainer .gridContent {
+    grid-column: content;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .gridContainer .rowContent {
+    grid-column: content;
+  }
+
+  .gridContainer .gridSidebar {
+    display: inline;
+  }
+
+  .gridContent .colLargeSpan1 {
+    grid-column: auto / span 1;
+  }
+  .rowContent .colLargeSpan1 {
+    flex-basis: calc(12.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan2 {
+    grid-column: auto / span 2;
+  }
+  .rowContent .colLargeSpan2 {
+    flex-basis: calc(25% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan3 {
+    grid-column: auto / span 3;
+  }
+  .rowContent .colLargeSpan3 {
+    flex-basis: calc(37.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan4 {
+    grid-column: auto / span 4;
+  }
+  .rowContent .colLargeSpan4 {
+    flex-basis: calc(50% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan5 {
+    grid-column: auto / span 5;
+  }
+  .rowContent .colLargeSpan5 {
+    flex-basis: calc(62.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan6 {
+    grid-column: auto / span 6;
+  }
+  .rowContent .colLargeSpan6 {
+    flex-basis: calc(75% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan7 {
+    grid-column: auto / span 7;
+  }
+  .rowContent .colLargeSpan7 {
+    flex-basis: calc(87.5% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeSpan8 {
+    grid-column: auto / span 8;
+  }
+  .rowContent .colLargeSpan8 {
+    flex-basis: 100%;
+    margin: 0px 12px;
+  }
+
+  .gridContent .colLargeStart1 {
+    grid-column-start: 1;
+  }
+
+  .gridContent .colLargeStart2 {
+    grid-column-start: 2;
+  }
+  .rowContent .colLargeOffset1 {
+    margin-left: calc(12.5% + 12px);
+  }
+
+  .gridContent .colLargeStart3 {
+    grid-column-start: 3;
+  }
+  .rowContent .colLargeOffset2 {
+    margin-left: calc(25% + 12px);
+  }
+
+  .gridContent .colLargeStart4 {
+    grid-column-start: 4;
+  }
+  .rowContent .colLargeOffset3 {
+    margin-left: calc(37.5% + 12px);
+  }
+
+  .gridContent .colLargeStart5 {
+    grid-column-start: 5;
+  }
+  .rowContent .colLargeOffset4 {
+    margin-left: calc(50% + 12px);
+  }
+
+  .gridContent .colLargeStart6 {
+    grid-column-start: 6;
+  }
+  .rowContent .colLargeOffset5 {
+    margin-left: calc(62.5% + 12px);
+  }
+
+  .gridContent .colLargeStart7 {
+    grid-column-start: 7;
+  }
+  .rowContent .colLargeOffset6 {
+    margin-left: calc(75% + 12px);
+  }
+
+  .gridContent .colLargeStart8 {
+    grid-column-start: 8;
+  }
+  .rowContent .colLargeOffset7 {
+    margin-left: calc(87.5% + 12px);
+  }
+}
+
+@media (min-width: 1025px) {
+  .gridContainer .gridContent {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .gridContent .colXLargeSpan1 {
+    grid-column: auto / span 1;
+  }
+  .rowContent .colXLargeSpan1 {
+    flex-basis: calc(8.333% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan2 {
+    grid-column: auto / span 2;
+  }
+  .rowContent .colXLargeSpan2 {
+    flex-basis: calc(16.667% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan3 {
+    grid-column: auto / span 3;
+  }
+  .rowContent .colXLargeSpan3 {
+    flex-basis: calc(25% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan4 {
+    grid-column: auto / span 4;
+  }
+  .rowContent .colXLargeSpan4 {
+    flex-basis: calc(33.333% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan5 {
+    grid-column: auto / span 5;
+  }
+  .rowContent .colXLargeSpan5 {
+    flex-basis: calc(41.666% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan6 {
+    grid-column: auto / span 6;
+  }
+  .rowContent .colXLargeSpan6 {
+    flex-basis: calc(50% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan7 {
+    grid-column: auto / span 7;
+  }
+  .rowContent .colXLargeSpan7 {
+    flex-basis: calc(58.333% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan8 {
+    grid-column: auto / span 8;
+  }
+  .rowContent .colXLargeSpan8 {
+    flex-basis: calc(66.667% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan9 {
+    grid-column: auto / span 9;
+  }
+  .rowContent .colXLargeSpan9 {
+    flex-basis: calc(75% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan10 {
+    grid-column: auto / span 10;
+  }
+  .rowContent .colXLargeSpan10 {
+    flex-basis: calc(83.333% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan11 {
+    grid-column: auto / span 11;
+  }
+  .rowContent .colXLargeSpan11 {
+    flex-basis: calc(91.667% - 24px);
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeSpan12 {
+    grid-column: auto / span 12;
+  }
+  .rowContent .colXLargeSpan12 {
+    flex-basis: 100%;
+    margin: 0px 12px;
+  }
+
+  .gridContent .colXLargeStart1 {
+    grid-column-start: 1;
+  }
+
+  .gridContent .colXLargeStart2 {
+    grid-column-start: 2;
+  }
+  .rowContent .colXLargeOffset1 {
+    margin-left: calc(8.333% + 12px);
+  }
+
+  .gridContent .colXLargeStart3 {
+    grid-column-start: 3;
+  }
+  .rowContent .colXLargeOffset2 {
+    margin-left: calc(16.667% + 12px);
+  }
+
+  .gridContent .colXLargeStart4 {
+    grid-column-start: 4;
+  }
+  .rowContent .colXLargeOffset3 {
+    margin-left: calc(25% + 12px);
+  }
+
+  .gridContent .colXLargeStart5 {
+    grid-column-start: 5;
+  }
+  .rowContent .colXLargeOffset4 {
+    margin-left: calc(33.333% + 12px);
+  }
+
+  .gridContent .colXLargeStart6 {
+    grid-column-start: 6;
+  }
+  .rowContent .colXLargeOffset5 {
+    margin-left: calc(41.667% + 12px);
+  }
+
+  .gridContent .colXLargeStart7 {
+    grid-column-start: 7;
+  }
+  .rowContent .colXLargeOffset6 {
+    margin-left: calc(50% + 12px);
+  }
+
+  .gridContent .colXLargeStart8 {
+    grid-column-start: 8;
+  }
+  .rowContent .colXLargeOffset7 {
+    margin-left: calc(58.333% + 12px);
+  }
+
+  .gridContent .colXLargeStart9 {
+    grid-column-start: 9;
+  }
+  .rowContent .colXLargeOffset8 {
+    margin-left: calc(66.667% + 12px);
+  }
+
+  .gridContent .colXLargeStart10 {
+    grid-column-start: 10;
+  }
+  .rowContent .colXLargeOffset9 {
+    margin-left: calc(75% + 12px);
+  }
+
+  .gridContent .colXLargeStart11 {
+    grid-column-start: 11;
+  }
+  .rowContent .colXLargeOffset10 {
+    margin-left: calc(83.333% + 12px);
+  }
+
+  .gridContent .colXLargeStart12 {
+    grid-column-start: 12;
+  }
+  .rowContent .colXLargeOffset11 {
+    margin-left: calc(91.667% + 12px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .gridContainer {
+    margin: 0px auto;
+    max-width: 1312px; /* 64px + 1312px + 64px = 1440px */
+  }
+}
