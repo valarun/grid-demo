@@ -39,9 +39,9 @@ To place your items use the classes `col[screen-size]Span[column-count]` and `co
 
 `Large` for 769px - 1024px
 
-`Medium` for 376px - 768px
+`Medium` for 600px - 768px
 
-`Small` for 0px - 375px
+`Small` for 0px - 599px
 
 [column-count] is the number of columns the element should span.
 
