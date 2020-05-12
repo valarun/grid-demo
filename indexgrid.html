@@ -7,31 +7,7 @@
     <title>Grid demo</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./grid.css" />
-    <style>
-      .gridSidebar {
-        background-color: pink;
-        height: 100vh;
-      }
-
-      .box {
-        background-color: powderblue;
-        height: 100px;
-      }
-
-      .sidebarButton {
-        border: 2px solid gray;
-        border-radius: 5px;
-        position: absolute;
-        top: 20px; /* position the top  edge of the element at the middle of the parent */
-        left: 50%; /* position the left edge of the element at the middle of the parent */
-
-        transform: translate(-50%, -50%);
-      }
-
-      .hide {
-        display: none !important;
-      }
-    </style>
+    <link rel="stylesheet" href="./demoStyles.css" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
@@ -49,8 +25,13 @@
   </head>
 
   <body>
-    <button class="sidebarButton" onClick="toggleSidebar()">
+    <button class="button sidebarButton" onClick="toggleSidebar()">
       Toggle sidebar
+    </button>
+    <button>
+      <a class="button navigateButton" href="index.html">
+        View row based grid
+      </a>
     </button>
     <div class="gridContainer">
       <div id="sidebar" class="gridSidebar"></div>
