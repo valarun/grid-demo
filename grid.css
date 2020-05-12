@@ -17,7 +17,7 @@
 .gridContainer .gridContent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 16px;
+  gap: 16px;
   grid-auto-rows: minmax(min-content, max-content);
   margin: 0px 12px;
 }
@@ -33,7 +33,7 @@
 }
 .rowContent .colSmallSpan1 {
   flex-basis: calc(25% - 12px);
-  margin: 0px 6px;
+  margin: 6px;
 }
 
 .gridContent .colSmallSpan2 {
@@ -41,7 +41,7 @@
 }
 .rowContent .colSmallSpan2 {
   flex-basis: calc(50% - 12px);
-  margin: 0px 6px;
+  margin: 6px;
 }
 
 .gridContent .colSmallSpan3 {
@@ -49,7 +49,7 @@
 }
 .rowContent .colSmallSpan3 {
   flex-basis: calc(75% - 12px);
-  margin: 0px 6px;
+  margin: 6px;
 }
 
 .gridContent .colSmallSpan4 {
@@ -57,7 +57,7 @@
 }
 .rowContent .colSmallSpan4 {
   flex-basis: 100%;
-  margin: 0px 6px;
+  margin: 6px;
 }
 
 .gridContent .colSmallStart1 {
@@ -101,7 +101,7 @@
   }
   .rowContent .colSmallSpan1 {
     flex-basis: calc(25% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colSmallSpan2 {
@@ -109,7 +109,7 @@
   }
   .rowContent .colSmallSpan2 {
     flex-basis: calc(50% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colSmallSpan3 {
@@ -117,7 +117,7 @@
   }
   .rowContent .colSmallSpan3 {
     flex-basis: calc(75% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colSmallSpan4 {
@@ -125,7 +125,7 @@
   }
   .rowContent .colSmallSpan4 {
     flex-basis: 100%;
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .rowContent .colSmallOffset1 {
@@ -146,7 +146,7 @@
   }
   .rowContent .colMediumSpan1 {
     flex-basis: calc(12.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan2 {
@@ -154,7 +154,7 @@
   }
   .rowContent .colMediumSpan2 {
     flex-basis: calc(25% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan3 {
@@ -162,7 +162,7 @@
   }
   .rowContent .colMediumSpan3 {
     flex-basis: calc(37.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan4 {
@@ -170,7 +170,7 @@
   }
   .rowContent .colMediumSpan4 {
     flex-basis: calc(50% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan5 {
@@ -178,7 +178,7 @@
   }
   .rowContent .colMediumSpan5 {
     flex-basis: calc(62.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan6 {
@@ -186,7 +186,7 @@
   }
   .rowContent .colMediumSpan6 {
     flex-basis: calc(75% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan7 {
@@ -194,7 +194,7 @@
   }
   .rowContent .colMediumSpan7 {
     flex-basis: calc(87.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumSpan8 {
@@ -202,7 +202,7 @@
   }
   .rowContent .colMediumSpan8 {
     flex-basis: 100%;
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colMediumStart1 {
@@ -283,7 +283,7 @@
   }
   .rowContent .colLargeSpan1 {
     flex-basis: calc(12.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan2 {
@@ -291,7 +291,7 @@
   }
   .rowContent .colLargeSpan2 {
     flex-basis: calc(25% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan3 {
@@ -299,7 +299,7 @@
   }
   .rowContent .colLargeSpan3 {
     flex-basis: calc(37.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan4 {
@@ -307,7 +307,7 @@
   }
   .rowContent .colLargeSpan4 {
     flex-basis: calc(50% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan5 {
@@ -315,7 +315,7 @@
   }
   .rowContent .colLargeSpan5 {
     flex-basis: calc(62.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan6 {
@@ -323,7 +323,7 @@
   }
   .rowContent .colLargeSpan6 {
     flex-basis: calc(75% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan7 {
@@ -331,7 +331,7 @@
   }
   .rowContent .colLargeSpan7 {
     flex-basis: calc(87.5% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeSpan8 {
@@ -339,7 +339,7 @@
   }
   .rowContent .colLargeSpan8 {
     flex-basis: 100%;
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colLargeStart1 {
@@ -406,7 +406,7 @@
   }
   .rowContent .colXLargeSpan1 {
     flex-basis: calc(8.333% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan2 {
@@ -414,7 +414,7 @@
   }
   .rowContent .colXLargeSpan2 {
     flex-basis: calc(16.667% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan3 {
@@ -422,7 +422,7 @@
   }
   .rowContent .colXLargeSpan3 {
     flex-basis: calc(25% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan4 {
@@ -430,7 +430,7 @@
   }
   .rowContent .colXLargeSpan4 {
     flex-basis: calc(33.333% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan5 {
@@ -438,7 +438,7 @@
   }
   .rowContent .colXLargeSpan5 {
     flex-basis: calc(41.666% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan6 {
@@ -446,7 +446,7 @@
   }
   .rowContent .colXLargeSpan6 {
     flex-basis: calc(50% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan7 {
@@ -454,7 +454,7 @@
   }
   .rowContent .colXLargeSpan7 {
     flex-basis: calc(58.333% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan8 {
@@ -462,7 +462,7 @@
   }
   .rowContent .colXLargeSpan8 {
     flex-basis: calc(66.667% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan9 {
@@ -470,7 +470,7 @@
   }
   .rowContent .colXLargeSpan9 {
     flex-basis: calc(75% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan10 {
@@ -478,7 +478,7 @@
   }
   .rowContent .colXLargeSpan10 {
     flex-basis: calc(83.333% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan11 {
@@ -486,7 +486,7 @@
   }
   .rowContent .colXLargeSpan11 {
     flex-basis: calc(91.667% - 24px);
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeSpan12 {
@@ -494,7 +494,7 @@
   }
   .rowContent .colXLargeSpan12 {
     flex-basis: 100%;
-    margin: 0px 12px;
+    margin: 12px;
   }
 
   .gridContent .colXLargeStart1 {
