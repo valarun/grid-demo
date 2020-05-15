@@ -1,6 +1,6 @@
 /* The class gridContainer should be applied so that no margins are around it */
 .gridContainer {
-  margin: 0px 8px 0px 8px;
+  margin: 0px 10px;
   display: flex;
 }
 
