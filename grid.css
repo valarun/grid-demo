@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.gridFreeContainer {
+  margin: 0px 16px;
+}
+
 /* The class gridSidebar should be nested directly below the class gridContainer */
 .gridContainer .gridSidebar {
   min-width: 224px;
@@ -93,6 +97,10 @@
 @media (min-width: 600px) {
   .gridContainer {
     margin: 0px 20px;
+  }
+
+  .gridFreeContainer {
+    margin: 0px 32px;
   }
 
   .gridContainer .gridContent {
@@ -267,6 +275,10 @@
 @media (min-width: 769px) {
   .gridContainer {
     margin: 0px 52px;
+  }
+
+  .gridFreeContainer {
+    margin: 0px 64px;
   }
 
   .gridContainer .gridContent {
@@ -587,5 +599,10 @@
   .gridContainer {
     margin: 0px auto;
     max-width: 1336px; /* 52px + 1336px + 52px = 1440px */
+  }
+
+  .gridFreeContainer {
+    margin: 0px auto;
+    max-width: 1312px; /* 64px + 1312px + 64px = 1440px */
   }
 }

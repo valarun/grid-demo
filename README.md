@@ -81,3 +81,7 @@ your code would look like:
   </div>
 </div>
 ```
+
+#### Want more freedom? Use gridFreeContainer
+
+If you want more control and only want the outer margin, you can use the gridFreeContainer to wrap your content
