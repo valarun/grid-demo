@@ -1,6 +1,6 @@
 /* The class gridContainer should be applied so that no margins are around it */
 .gridContainer {
-  margin: 0px 10px;
+  margin: 0px 8px;
   display: flex;
 }
 
@@ -37,24 +37,24 @@
   grid-column: auto / span 1;
 }
 .rowContent .colSmallSpan1 {
-  flex-basis: calc(25% - 12px);
-  margin: 0px 6px;
+  flex-basis: calc(25% - 16px);
+  margin: 0px 8px;
 }
 
 .gridContent .colSmallSpan2 {
   grid-column: auto / span 2;
 }
 .rowContent .colSmallSpan2 {
-  flex-basis: calc(50% - 12px);
-  margin: 0px 6px;
+  flex-basis: calc(50% - 16px);
+  margin: 0px 8px;
 }
 
 .gridContent .colSmallSpan3 {
   grid-column: auto / span 3;
 }
 .rowContent .colSmallSpan3 {
-  flex-basis: calc(75% - 12px);
-  margin: 0px 6px;
+  flex-basis: calc(75% - 16px);
+  margin: 0px 8px;
 }
 
 .gridContent .colSmallSpan4 {
@@ -62,7 +62,7 @@
 }
 .rowContent .colSmallSpan4 {
   flex-basis: 100%;
-  margin: 0px 6px;
+  margin: 0px 8px;
 }
 
 .gridContent .colSmallStart1 {
@@ -73,26 +73,26 @@
   grid-column-start: 2;
 }
 .rowContent .colSmallOffset1 {
-  margin-left: calc(25% + 6px);
+  margin-left: calc(25% + 8px);
 }
 
 .gridContent .colSmallStart3 {
   grid-column-start: 3;
 }
 .rowContent .colSmallOffset2 {
-  margin-left: calc(50% + 6px);
+  margin-left: calc(50% + 8px);
 }
 
 .gridContent .colSmallStart4 {
   grid-column-start: 4;
 }
 .rowContent .colSmallOffset3 {
-  margin-left: calc(75% + 6px);
+  margin-left: calc(75% + 8px);
 }
 
 @media (min-width: 600px) {
   .gridContainer {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px;
   }
 
   .gridContainer .gridContent {
@@ -266,7 +266,7 @@
 
 @media (min-width: 769px) {
   .gridContainer {
-    margin: 0px 52px 0px 52px;
+    margin: 0px 52px;
   }
 
   .gridContainer .gridContent {
