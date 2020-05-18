@@ -1,7 +1,8 @@
 /* The class gridContainer should be applied so that no margins are around it */
 .gridContainer {
   margin: 0px 8px;
-  display: flex;
+  display: grid;
+  grid-template-columns: [content] 1fr;
 }
 
 .gridFreeContainer {
@@ -24,11 +25,6 @@
   column-gap: 16px;
   grid-auto-rows: minmax(min-content, max-content);
   margin: 0px 12px;
-  flex: auto;
-}
-
-.gridContainer .rowContent {
-  flex: auto;
 }
 
 /* The class rowContent should be nested directly below the class gridContainer */
@@ -275,6 +271,7 @@
 @media (min-width: 769px) {
   .gridContainer {
     margin: 0px 52px;
+    grid-template-columns: [sidebar] auto [content] 1fr;
   }
 
   .gridFreeContainer {
@@ -292,6 +289,8 @@
 
   .gridContainer .gridSidebar {
     display: inline;
+    grid-column: sidebar;
+    grid-row: 1/20;
   }
 
   .gridContent .colLargeSpan1 {
