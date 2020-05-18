@@ -1,6 +1,6 @@
 ## Grid system
 
-All pages within the Sotheby's domain should follow the [grid system defined in figma](https://www.figma.com/file/6ovJsZDkG8r7dGpbM5IsfS/Core---FOR-REVIEW-ONLY?node-id=21%3A32). To help developers follow the grid system, grid.css contains classes that can easily be applied to certain elements in the dom for a responsive grid that follows the designs.
+All pages within the Sotheby's domain should follow the [grid system defined in figma](https://www.figma.com/file/VbsWInV1sYOGiNuWI9zu5u/Core?node-id=21%3A32). To help developers follow the grid system, grid.css contains classes that can easily be applied to certain elements in the dom for a responsive grid that follows the designs.
 
 The grid system dimensions are as follows:
 
@@ -8,20 +8,38 @@ The grid system dimensions are as follows:
 | ----------- | :-----: | :---------: | :---------: |
 | 1440 - 1025 |   12    |     64      |     24      |
 | 1024 - 769  |    8    |     64      |     24      |
-| 768 - 376   |    8    |     32      |     24      |
-| 375 - x     |    4    |     24      |     16      |
+| 768 - 600   |    8    |     32      |     24      |
+| 599 - x     |    4    |     16      |     16      |
 
 ---
 
 ### Styles
 
-The lowest level layout component should have the class `gridContainer` which adds a margin to either side of the site content. Below it there can either be one or two components depending on if the page should include a sidebar. The sidebar element should contain the class `gridSidebar` and the main content element should contain the class `gridContent` or `rowContent` depending on your use case. A page including a sidebar should have the following structure:
+The lowest level layout component should have the class `gridContainer` (or [gridFreeContainer](####gridFreeContainer) for more freedom) which adds a margin to either side of the site content. Below it there can be an element with the class `gridSidebar` if a sidebar should be displayed on the page and then one or more elements with the class `gridContent` or `rowContent`. A page including a sidebar could have the following structure:
 
 ```
 <div class="gridContainer">
   <div class="gridSidebar">...</div>
-  <div class="gridContent [or rowContent]">...</div>
+  <div class="rowContent"><div class="row">...</div></div>
+  <div class="gridContent">...</div>
 </div>
+```
+
+This would look like the following:
+
+```
+_____________________
+|SSSS|RRRR|RRRR|RRRR|
+|SSSS|GGGG|GGGG|GGGG|
+|SSSS|GGGG|GGGG|GGGG|
+```
+
+where
+
+```
+S = Sidebar
+R = RowContent
+G = GridContent
 ```
 
 Note that the maximum width of the grid (sidebar + content) is 1440px. For displays larger we will center the grid and add margins.
@@ -82,6 +100,6 @@ your code would look like:
 </div>
 ```
 
-#### Want more freedom? Use gridFreeContainer
+#### gridFreeContainer
 
 If you want more control and only want the outer margin, you can use the gridFreeContainer to wrap your content
