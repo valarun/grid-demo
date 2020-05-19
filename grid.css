@@ -1,16 +1,16 @@
-/* The class gridContainer should be applied so that no margins are around it */
-.gridContainer {
+/* The class dlsContainer should be applied so that no margins are around it */
+.dlsContainer {
   margin: 0px 8px;
   display: grid;
   grid-template-columns: [content] 1fr;
 }
 
-.gridFreeContainer {
+.dlsFreeContainer {
   margin: 0px 16px;
 }
 
-/* The class gridSidebar should be nested directly below the class gridContainer */
-.gridContainer .gridSidebar {
+/* The class dlsSidebar should be nested directly below the class dlsContainer */
+.dlsContainer .dlsSidebar {
   min-width: 224px;
   width: 224px;
   margin-left: 12px;
@@ -18,8 +18,8 @@
   display: none;
 }
 
-/* The class gridContent should be nested directly below the class gridContainer */
-.gridContainer .gridContent {
+/* The class dlsGridContent should be nested directly below the class dlsContainer */
+.dlsContainer .dlsGridContent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
@@ -27,580 +27,580 @@
   margin: 0px 12px;
 }
 
-/* The class rowContent should be nested directly below the class gridContainer */
-.rowContent > .row {
+/* The class dlsRowContent should be nested directly below the class dlsContainer */
+.dlsRowContent > .dlsRow {
   display: flex;
   flex-wrap: wrap;
 }
 
-.gridContent .colSmallSpan1 {
+.dlsGridContent .dlsColSmallSpan1 {
   grid-column: auto / span 1;
 }
-.rowContent .colSmallSpan1 {
+.dlsRowContent .dlsColSmallSpan1 {
   flex-basis: calc(25% - 16px);
   margin: 0px 8px;
 }
 
-.gridContent .colSmallSpan2 {
+.dlsGridContent .dlsColSmallSpan2 {
   grid-column: auto / span 2;
 }
-.rowContent .colSmallSpan2 {
+.dlsRowContent .dlsColSmallSpan2 {
   flex-basis: calc(50% - 16px);
   margin: 0px 8px;
 }
 
-.gridContent .colSmallSpan3 {
+.dlsGridContent .dlsColSmallSpan3 {
   grid-column: auto / span 3;
 }
-.rowContent .colSmallSpan3 {
+.dlsRowContent .dlsColSmallSpan3 {
   flex-basis: calc(75% - 16px);
   margin: 0px 8px;
 }
 
-.gridContent .colSmallSpan4 {
+.dlsGridContent .dlsColSmallSpan4 {
   grid-column: auto / span 4;
 }
-.rowContent .colSmallSpan4 {
+.dlsRowContent .dlsColSmallSpan4 {
   flex-basis: 100%;
   margin: 0px 8px;
 }
 
-.gridContent .colSmallStart1 {
+.dlsGridContent .dlsColSmallStart1 {
   grid-column-start: 1;
 }
 
-.gridContent .colSmallStart2 {
+.dlsGridContent .dlsColSmallStart2 {
   grid-column-start: 2;
 }
-.rowContent .colSmallOffset1 {
+.dlsRowContent .dlsColSmallOffset1 {
   margin-left: calc(25% + 8px);
 }
 
-.gridContent .colSmallStart3 {
+.dlsGridContent .dlsColSmallStart3 {
   grid-column-start: 3;
 }
-.rowContent .colSmallOffset2 {
+.dlsRowContent .dlsColSmallOffset2 {
   margin-left: calc(50% + 8px);
 }
 
-.gridContent .colSmallStart4 {
+.dlsGridContent .dlsColSmallStart4 {
   grid-column-start: 4;
 }
-.rowContent .colSmallOffset3 {
+.dlsRowContent .dlsColSmallOffset3 {
   margin-left: calc(75% + 8px);
 }
 
 @media (min-width: 600px) {
-  .gridContainer {
+  .dlsContainer {
     margin: 0px 20px;
   }
 
-  .gridFreeContainer {
+  .dlsFreeContainer {
     margin: 0px 32px;
   }
 
-  .gridContainer .gridContent {
+  .dlsContainer .dlsGridContent {
     grid-template-columns: repeat(8, 1fr);
     column-gap: 24px;
   }
 
   /* If small is defaulted to, we need to adjust for a bigger gap */
-  .gridContent .colSmallSpan1 {
+  .dlsGridContent .dlsColSmallSpan1 {
     grid-column: auto / span 1;
   }
-  .rowContent .colSmallSpan1 {
+  .dlsRowContent .dlsColSmallSpan1 {
     flex-basis: calc(25% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colSmallSpan2 {
+  .dlsGridContent .dlsColSmallSpan2 {
     grid-column: auto / span 2;
   }
-  .rowContent .colSmallSpan2 {
+  .dlsRowContent .dlsColSmallSpan2 {
     flex-basis: calc(50% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colSmallSpan3 {
+  .dlsGridContent .dlsColSmallSpan3 {
     grid-column: auto / span 3;
   }
-  .rowContent .colSmallSpan3 {
+  .dlsRowContent .dlsColSmallSpan3 {
     flex-basis: calc(75% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colSmallSpan4 {
+  .dlsGridContent .dlsColSmallSpan4 {
     grid-column: auto / span 4;
   }
-  .rowContent .colSmallSpan4 {
+  .dlsRowContent .dlsColSmallSpan4 {
     flex-basis: 100%;
     margin: 0px 12px;
   }
 
-  .rowContent .colSmallOffset1 {
+  .dlsRowContent .dlsColSmallOffset1 {
     margin-left: calc(25% + 12px);
   }
 
-  .rowContent .colSmallOffset2 {
+  .dlsRowContent .dlsColSmallOffset2 {
     margin-left: calc(50% + 12px);
   }
 
-  .rowContent .colSmallOffset3 {
+  .dlsRowContent .dlsColSmallOffset3 {
     margin-left: calc(75% + 12px);
   }
   /* ^ Small default handling end ^ */
 
-  .gridContent .colMediumSpan1 {
+  .dlsGridContent .dlsColMediumSpan1 {
     grid-column: auto / span 1;
   }
-  .rowContent .colMediumSpan1 {
+  .dlsRowContent .dlsColMediumSpan1 {
     flex-basis: calc(12.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan2 {
+  .dlsGridContent .dlsColMediumSpan2 {
     grid-column: auto / span 2;
   }
-  .rowContent .colMediumSpan2 {
+  .dlsRowContent .dlsColMediumSpan2 {
     flex-basis: calc(25% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan3 {
+  .dlsGridContent .dlsColMediumSpan3 {
     grid-column: auto / span 3;
   }
-  .rowContent .colMediumSpan3 {
+  .dlsRowContent .dlsColMediumSpan3 {
     flex-basis: calc(37.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan4 {
+  .dlsGridContent .dlsColMediumSpan4 {
     grid-column: auto / span 4;
   }
-  .rowContent .colMediumSpan4 {
+  .dlsRowContent .dlsColMediumSpan4 {
     flex-basis: calc(50% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan5 {
+  .dlsGridContent .dlsColMediumSpan5 {
     grid-column: auto / span 5;
   }
-  .rowContent .colMediumSpan5 {
+  .dlsRowContent .dlsColMediumSpan5 {
     flex-basis: calc(62.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan6 {
+  .dlsGridContent .dlsColMediumSpan6 {
     grid-column: auto / span 6;
   }
-  .rowContent .colMediumSpan6 {
+  .dlsRowContent .dlsColMediumSpan6 {
     flex-basis: calc(75% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan7 {
+  .dlsGridContent .dlsColMediumSpan7 {
     grid-column: auto / span 7;
   }
-  .rowContent .colMediumSpan7 {
+  .dlsRowContent .dlsColMediumSpan7 {
     flex-basis: calc(87.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumSpan8 {
+  .dlsGridContent .dlsColMediumSpan8 {
     grid-column: auto / span 8;
   }
-  .rowContent .colMediumSpan8 {
+  .dlsRowContent .dlsColMediumSpan8 {
     flex-basis: 100%;
     margin: 0px 12px;
   }
 
-  .gridContent .colMediumStart1 {
+  .dlsGridContent .dlsColMediumStart1 {
     grid-column-start: 1;
   }
 
-  .gridContent .colMediumStart2 {
+  .dlsGridContent .dlsColMediumStart2 {
     grid-column-start: 2;
   }
-  .rowContent .colMediumOffset1 {
+  .dlsRowContent .dlsColMediumOffset1 {
     margin-left: calc(12.5% + 12px);
   }
 
-  .gridContent .colMediumStart3 {
+  .dlsGridContent .dlsColMediumStart3 {
     grid-column-start: 3;
   }
-  .rowContent .colMediumOffset2 {
+  .dlsRowContent .dlsColMediumOffset2 {
     margin-left: calc(25% + 12px);
   }
 
-  .gridContent .colMediumStart4 {
+  .dlsGridContent .dlsColMediumStart4 {
     grid-column-start: 4;
   }
-  .rowContent .colMediumOffset3 {
+  .dlsRowContent .dlsColMediumOffset3 {
     margin-left: calc(37.5% + 12px);
   }
 
-  .gridContent .colMediumStart5 {
+  .dlsGridContent .dlsColMediumStart5 {
     grid-column-start: 5;
   }
-  .rowContent .colMediumOffset4 {
+  .dlsRowContent .dlsColMediumOffset4 {
     margin-left: calc(50% + 12px);
   }
 
-  .gridContent .colMediumStart6 {
+  .dlsGridContent .dlsColMediumStart6 {
     grid-column-start: 6;
   }
-  .rowContent .colMediumOffset5 {
+  .dlsRowContent .dlsColMediumOffset5 {
     margin-left: calc(62.5% + 12px);
   }
 
-  .gridContent .colMediumStart7 {
+  .dlsGridContent .dlsColMediumStart7 {
     grid-column-start: 7;
   }
-  .rowContent .colMediumOffset6 {
+  .dlsRowContent .dlsColMediumOffset6 {
     margin-left: calc(75% + 12px);
   }
 
-  .gridContent .colMediumStart8 {
+  .dlsGridContent .dlsColMediumStart8 {
     grid-column-start: 8;
   }
-  .rowContent .colMediumOffset7 {
+  .dlsRowContent .dlsColMediumOffset7 {
     margin-left: calc(87.5% + 12px);
   }
 }
 
 @media (min-width: 769px) {
-  .gridContainer {
+  .dlsContainer {
     margin: 0px 52px;
     grid-template-columns: [sidebar] auto [content] 1fr;
   }
 
-  .gridFreeContainer {
+  .dlsFreeContainer {
     margin: 0px 64px;
   }
 
-  .gridContainer .gridContent {
+  .dlsContainer .dlsGridContent {
     grid-column: content;
     grid-template-columns: repeat(8, 1fr);
   }
 
-  .gridContainer .rowContent {
+  .dlsContainer .dlsRowContent {
     grid-column: content;
   }
 
-  .gridContainer .gridSidebar {
+  .dlsContainer .dlsSidebar {
     display: inline;
     grid-column: sidebar;
     grid-row: 1/20;
   }
 
-  .gridContent .colLargeSpan1 {
+  .dlsGridContent .dlsColLargeSpan1 {
     grid-column: auto / span 1;
   }
-  .rowContent .colLargeSpan1 {
+  .dlsRowContent .dlsColLargeSpan1 {
     flex-basis: calc(12.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan2 {
+  .dlsGridContent .dlsColLargeSpan2 {
     grid-column: auto / span 2;
   }
-  .rowContent .colLargeSpan2 {
+  .dlsRowContent .dlsColLargeSpan2 {
     flex-basis: calc(25% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan3 {
+  .dlsGridContent .dlsColLargeSpan3 {
     grid-column: auto / span 3;
   }
-  .rowContent .colLargeSpan3 {
+  .dlsRowContent .dlsColLargeSpan3 {
     flex-basis: calc(37.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan4 {
+  .dlsGridContent .dlsColLargeSpan4 {
     grid-column: auto / span 4;
   }
-  .rowContent .colLargeSpan4 {
+  .dlsRowContent .dlsColLargeSpan4 {
     flex-basis: calc(50% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan5 {
+  .dlsGridContent .dlsColLargeSpan5 {
     grid-column: auto / span 5;
   }
-  .rowContent .colLargeSpan5 {
+  .dlsRowContent .dlsColLargeSpan5 {
     flex-basis: calc(62.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan6 {
+  .dlsGridContent .dlsColLargeSpan6 {
     grid-column: auto / span 6;
   }
-  .rowContent .colLargeSpan6 {
+  .dlsRowContent .dlsColLargeSpan6 {
     flex-basis: calc(75% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan7 {
+  .dlsGridContent .dlsColLargeSpan7 {
     grid-column: auto / span 7;
   }
-  .rowContent .colLargeSpan7 {
+  .dlsRowContent .dlsColLargeSpan7 {
     flex-basis: calc(87.5% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeSpan8 {
+  .dlsGridContent .dlsColLargeSpan8 {
     grid-column: auto / span 8;
   }
-  .rowContent .colLargeSpan8 {
+  .dlsRowContent .dlsColLargeSpan8 {
     flex-basis: 100%;
     margin: 0px 12px;
   }
 
-  .gridContent .colLargeStart1 {
+  .dlsGridContent .dlsColLargeStart1 {
     grid-column-start: 1;
   }
 
-  .gridContent .colLargeStart2 {
+  .dlsGridContent .dlsColLargeStart2 {
     grid-column-start: 2;
   }
-  .rowContent .colLargeOffset1 {
+  .dlsRowContent .dlsColLargeOffset1 {
     margin-left: calc(12.5% + 12px);
   }
 
-  .gridContent .colLargeStart3 {
+  .dlsGridContent .dlsColLargeStart3 {
     grid-column-start: 3;
   }
-  .rowContent .colLargeOffset2 {
+  .dlsRowContent .dlsColLargeOffset2 {
     margin-left: calc(25% + 12px);
   }
 
-  .gridContent .colLargeStart4 {
+  .dlsGridContent .dlsColLargeStart4 {
     grid-column-start: 4;
   }
-  .rowContent .colLargeOffset3 {
+  .dlsRowContent .dlsColLargeOffset3 {
     margin-left: calc(37.5% + 12px);
   }
 
-  .gridContent .colLargeStart5 {
+  .dlsGridContent .dlsColLargeStart5 {
     grid-column-start: 5;
   }
-  .rowContent .colLargeOffset4 {
+  .dlsRowContent .dlsColLargeOffset4 {
     margin-left: calc(50% + 12px);
   }
 
-  .gridContent .colLargeStart6 {
+  .dlsGridContent .dlsColLargeStart6 {
     grid-column-start: 6;
   }
-  .rowContent .colLargeOffset5 {
+  .dlsRowContent .dlsColLargeOffset5 {
     margin-left: calc(62.5% + 12px);
   }
 
-  .gridContent .colLargeStart7 {
+  .dlsGridContent .dlsColLargeStart7 {
     grid-column-start: 7;
   }
-  .rowContent .colLargeOffset6 {
+  .dlsRowContent .dlsColLargeOffset6 {
     margin-left: calc(75% + 12px);
   }
 
-  .gridContent .colLargeStart8 {
+  .dlsGridContent .dlsColLargeStart8 {
     grid-column-start: 8;
   }
-  .rowContent .colLargeOffset7 {
+  .dlsRowContent .dlsColLargeOffset7 {
     margin-left: calc(87.5% + 12px);
   }
 }
 
 @media (min-width: 1025px) {
-  .gridContainer .gridContent {
+  .dlsContainer .dlsGridContent {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .gridContent .colXLargeSpan1 {
+  .dlsGridContent .dlsColXLargeSpan1 {
     grid-column: auto / span 1;
   }
-  .rowContent .colXLargeSpan1 {
+  .dlsRowContent .dlsColXLargeSpan1 {
     flex-basis: calc(8.333% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan2 {
+  .dlsGridContent .dlsColXLargeSpan2 {
     grid-column: auto / span 2;
   }
-  .rowContent .colXLargeSpan2 {
+  .dlsRowContent .dlsColXLargeSpan2 {
     flex-basis: calc(16.667% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan3 {
+  .dlsGridContent .dlsColXLargeSpan3 {
     grid-column: auto / span 3;
   }
-  .rowContent .colXLargeSpan3 {
+  .dlsRowContent .dlsColXLargeSpan3 {
     flex-basis: calc(25% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan4 {
+  .dlsGridContent .dlsColXLargeSpan4 {
     grid-column: auto / span 4;
   }
-  .rowContent .colXLargeSpan4 {
+  .dlsRowContent .dlsColXLargeSpan4 {
     flex-basis: calc(33.333% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan5 {
+  .dlsGridContent .dlsColXLargeSpan5 {
     grid-column: auto / span 5;
   }
-  .rowContent .colXLargeSpan5 {
+  .dlsRowContent .dlsColXLargeSpan5 {
     flex-basis: calc(41.666% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan6 {
+  .dlsGridContent .dlsColXLargeSpan6 {
     grid-column: auto / span 6;
   }
-  .rowContent .colXLargeSpan6 {
+  .dlsRowContent .dlsColXLargeSpan6 {
     flex-basis: calc(50% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan7 {
+  .dlsGridContent .dlsColXLargeSpan7 {
     grid-column: auto / span 7;
   }
-  .rowContent .colXLargeSpan7 {
+  .dlsRowContent .dlsColXLargeSpan7 {
     flex-basis: calc(58.333% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan8 {
+  .dlsGridContent .dlsColXLargeSpan8 {
     grid-column: auto / span 8;
   }
-  .rowContent .colXLargeSpan8 {
+  .dlsRowContent .dlsColXLargeSpan8 {
     flex-basis: calc(66.667% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan9 {
+  .dlsGridContent .dlsColXLargeSpan9 {
     grid-column: auto / span 9;
   }
-  .rowContent .colXLargeSpan9 {
+  .dlsRowContent .dlsColXLargeSpan9 {
     flex-basis: calc(75% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan10 {
+  .dlsGridContent .dlsColXLargeSpan10 {
     grid-column: auto / span 10;
   }
-  .rowContent .colXLargeSpan10 {
+  .dlsRowContent .dlsColXLargeSpan10 {
     flex-basis: calc(83.333% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan11 {
+  .dlsGridContent .dlsColXLargeSpan11 {
     grid-column: auto / span 11;
   }
-  .rowContent .colXLargeSpan11 {
+  .dlsRowContent .dlsColXLargeSpan11 {
     flex-basis: calc(91.667% - 24px);
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeSpan12 {
+  .dlsGridContent .dlsColXLargeSpan12 {
     grid-column: auto / span 12;
   }
-  .rowContent .colXLargeSpan12 {
+  .dlsRowContent .dlsColXLargeSpan12 {
     flex-basis: 100%;
     margin: 0px 12px;
   }
 
-  .gridContent .colXLargeStart1 {
+  .dlsGridContent .dlsColXLargeStart1 {
     grid-column-start: 1;
   }
 
-  .gridContent .colXLargeStart2 {
+  .dlsGridContent .dlsColXLargeStart2 {
     grid-column-start: 2;
   }
-  .rowContent .colXLargeOffset1 {
+  .dlsRowContent .dlsColXLargeOffset1 {
     margin-left: calc(8.333% + 12px);
   }
 
-  .gridContent .colXLargeStart3 {
+  .dlsGridContent .dlsColXLargeStart3 {
     grid-column-start: 3;
   }
-  .rowContent .colXLargeOffset2 {
+  .dlsRowContent .dlsColXLargeOffset2 {
     margin-left: calc(16.667% + 12px);
   }
 
-  .gridContent .colXLargeStart4 {
+  .dlsGridContent .dlsColXLargeStart4 {
     grid-column-start: 4;
   }
-  .rowContent .colXLargeOffset3 {
+  .dlsRowContent .dlsColXLargeOffset3 {
     margin-left: calc(25% + 12px);
   }
 
-  .gridContent .colXLargeStart5 {
+  .dlsGridContent .dlsColXLargeStart5 {
     grid-column-start: 5;
   }
-  .rowContent .colXLargeOffset4 {
+  .dlsRowContent .dlsColXLargeOffset4 {
     margin-left: calc(33.333% + 12px);
   }
 
-  .gridContent .colXLargeStart6 {
+  .dlsGridContent .dlsColXLargeStart6 {
     grid-column-start: 6;
   }
-  .rowContent .colXLargeOffset5 {
+  .dlsRowContent .dlsColXLargeOffset5 {
     margin-left: calc(41.667% + 12px);
   }
 
-  .gridContent .colXLargeStart7 {
+  .dlsGridContent .dlsColXLargeStart7 {
     grid-column-start: 7;
   }
-  .rowContent .colXLargeOffset6 {
+  .dlsRowContent .dlsColXLargeOffset6 {
     margin-left: calc(50% + 12px);
   }
 
-  .gridContent .colXLargeStart8 {
+  .dlsGridContent .dlsColXLargeStart8 {
     grid-column-start: 8;
   }
-  .rowContent .colXLargeOffset7 {
+  .dlsRowContent .dlsColXLargeOffset7 {
     margin-left: calc(58.333% + 12px);
   }
 
-  .gridContent .colXLargeStart9 {
+  .dlsGridContent .dlsColXLargeStart9 {
     grid-column-start: 9;
   }
-  .rowContent .colXLargeOffset8 {
+  .dlsRowContent .dlsColXLargeOffset8 {
     margin-left: calc(66.667% + 12px);
   }
 
-  .gridContent .colXLargeStart10 {
+  .dlsGridContent .dlsColXLargeStart10 {
     grid-column-start: 10;
   }
-  .rowContent .colXLargeOffset9 {
+  .dlsRowContent .dlsColXLargeOffset9 {
     margin-left: calc(75% + 12px);
   }
 
-  .gridContent .colXLargeStart11 {
+  .dlsGridContent .dlsColXLargeStart11 {
     grid-column-start: 11;
   }
-  .rowContent .colXLargeOffset10 {
+  .dlsRowContent .dlsColXLargeOffset10 {
     margin-left: calc(83.333% + 12px);
   }
 
-  .gridContent .colXLargeStart12 {
+  .dlsGridContent .dlsColXLargeStart12 {
     grid-column-start: 12;
   }
-  .rowContent .colXLargeOffset11 {
+  .dlsRowContent .dlsColXLargeOffset11 {
     margin-left: calc(91.667% + 12px);
   }
 }
 
 @media (min-width: 1440px) {
-  .gridContainer {
+  .dlsContainer {
     margin: 0px auto;
     max-width: 1336px; /* 52px + 1336px + 52px = 1440px */
   }
 
-  .gridFreeContainer {
+  .dlsFreeContainer {
     margin: 0px auto;
     max-width: 1312px; /* 64px + 1312px + 64px = 1440px */
   }
