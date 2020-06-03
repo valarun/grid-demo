@@ -24,7 +24,7 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 16px;
   grid-auto-rows: minmax(min-content, max-content);
-  margin: 0px 12px;
+  margin: 0px 8px;
 }
 
 /* The class dlsRowContent should be nested directly below the class dlsContainer */
@@ -102,6 +102,7 @@
   .dlsContainer .dlsGridContent {
     grid-template-columns: repeat(8, 1fr);
     column-gap: 24px;
+    margin: 0px 12px;
   }
 
   /* If small is defaulted to, we need to adjust for a bigger gap */
